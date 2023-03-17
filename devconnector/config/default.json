@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://Admin:20notches@devconnector.z34cl88.mongodb.net/?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://Admin:20notches@devconnector.z34cl88.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }

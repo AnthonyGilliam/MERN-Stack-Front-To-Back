@@ -6,6 +6,10 @@ const app = express();
 // Connect Database
 connectDB();
 
+// Init Middleware
+// 3:10 - Use the epxress.json() function to parse all incoming requests to JSON
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) => res.send('API Running'));
 
 // Define Routes
