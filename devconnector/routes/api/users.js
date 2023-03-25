@@ -50,7 +50,7 @@ router.post('/',
             d: 'mm',
         });
 
-        // 3:11 - Instantiate a new object using a declared mongoose Model to create a new collection object that can be
+        // 3:11 - Instantiate a new model object using a declared mongoose Model to create a new collection object that can be
         // saved to MongoDB
         user = new User({
             name,

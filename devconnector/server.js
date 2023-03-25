@@ -7,7 +7,7 @@ const app = express();
 connectDB();
 
 // Init Middleware
-// 3:10 - Use the epxress.json() function to parse all incoming requests to JSON
+// 3:10 - Use the express.json() function to parse all incoming requests to JSON
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('API Running'));
