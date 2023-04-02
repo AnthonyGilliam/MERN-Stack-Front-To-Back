@@ -5,20 +5,24 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server --ignore client",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "concurrently": "^7.6.0",
     "config": "^3.3.9",
     "express": "^4.18.2",
     "express-validator": "^6.14.3",
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.2",
-    "nodemon": "^2.0.20",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
   }
 }
