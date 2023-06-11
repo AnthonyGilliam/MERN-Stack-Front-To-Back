@@ -7,6 +7,7 @@ const initialState = {};
 
 const middleware = [thunk];
 
+// 7:37 - The composeWithDevTools() method allows for client-side redux debugging
 const store = createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(...middleware)));
 
 export default store;
