@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 const {body, validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -6,7 +7,6 @@ const config = require('config');
 const gravatar = require('gravatar');
 const auth = require('../../middleware/auth');
 const User = require('../../models/User');
-const router = express.Router();
 
 // 2:8 - Use this syntax to listen for a HTTP GET request on coming into the express server
 //  pass in the  API request's relative path as the first parameter
